@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather API</title>
+    <!-- fontawesome css1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- goggle font api css3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <input type="text" name="search" id="search" class="search" placeholder="Please Type a city..."
+                autocomplete="off" />
+            <button class="search-btn">Search</button>
+            <button class="current-btn"><i class="fas fa-map-marker-alt"></i> Current</button>
+        </form>
+
+        <div class="forecast">
+            <h3 class="city">Seoul</h3>
+            <p class="condition">Sunny</p>
+
+            <p class="temperature-container">
+                <span class="temperature">24</span>
+                <span class="degree">°C</span>
+            </p>
+            <div class="detail">
+                <p>Wind : <span class="wind"></span> mph</p>
+                <p>Humidity : <span class="humidity"></span> %</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="app.js" type="text/javascript"></script> -->
+</body>
+
+</html>
